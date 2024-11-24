@@ -124,19 +124,26 @@ Indica que a criação de um recurso foi bem-sucedida. O código HTTP `201` sign
     DELETE /api/mock/example-key
 - **Resposta (204)**: Sem conteúdo.
 
-### **Estrutura de Pacotes
-- ** **
-  ```plaintext
-    com.magtechologies.mockapirest
-    ├── adapters
-    │   ├── persistence   // Camada de persistência (entidades e repositórios)
-    │   └── rest          // Camada de comunicação REST
-    ├── application
-    │   ├── mapper        // Mapeamento entre DTOs e entidades (MapStruct)
-    │   └── service       // Regras de negócio e lógica da aplicação
-    ├── core
-    │   ├── domain        // Modelos de domínio
-    │   └── ports         // Interfaces para regras de negócio e persistência
-    └── MockApiApplication // Classe principal
-sss
-ddddd
+### Estrutura de Pacotes
+    ```plaintext
+      com.magtechologies.mockapirest
+      ├── adapters
+      │   ├── persistence   // Camada de persistência (entidades e repositórios)
+      │   └── rest          // Camada de comunicação REST
+      ├── application
+      │   ├── mapper        // Mapeamento entre DTOs e entidades (MapStruct)
+      │   └── service       // Regras de negócio e lógica da aplicação
+      ├── core
+      │   ├── domain        // Modelos de domínio
+      │   └── ports         // Interfaces para regras de negócio e persistência
+      └── MockApiApplication // Classe principal
+
+## Futuras Melhorias
+
+1. Adicionar suporte a autenticação e autorização para maior segurança.
+2. Implementar funcionalidades de paginação e filtros nos endpoints de consulta.
+3. Criar testes automatizados (unitários e de integração) para garantir a qualidade do código.
+4. Adicionar suporte para múltiplos bancos de dados e/ou banco de dados in-memory para testes rápidos.
+5. Integrar com outras ferramentas como Kafka para mensageria ou S3 para armazenamento de objetos mockados.
+
+`Atualizado em 23/11/2024 23:50`
