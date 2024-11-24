@@ -123,3 +123,20 @@ Indica que a criação de um recurso foi bem-sucedida. O código HTTP `201` sign
   ```bash
     DELETE /api/mock/example-key
 - **Resposta (204)**: Sem conteúdo.
+
+### **Estrutura de Pacotes
+- ** **
+  ```plaintext
+    com.magtechologies.mockapirest
+    ├── adapters
+    │   ├── persistence   // Camada de persistência (entidades e repositórios)
+    │   └── rest          // Camada de comunicação REST
+    ├── application
+    │   ├── mapper        // Mapeamento entre DTOs e entidades (MapStruct)
+    │   └── service       // Regras de negócio e lógica da aplicação
+    ├── core
+    │   ├── domain        // Modelos de domínio
+    │   └── ports         // Interfaces para regras de negócio e persistência
+    └── MockApiApplication // Classe principal
+sss
+ddddd
